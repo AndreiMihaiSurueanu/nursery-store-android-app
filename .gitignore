@@ -6,6 +6,10 @@
 # Files for the ART/Dalvik VM
 *.dex
 
+# Sourse start proj
+PlantStore-master.zip
+PlantStore-master
+
 # Java class files
 *.class
 
