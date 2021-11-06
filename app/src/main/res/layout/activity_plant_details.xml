@@ -49,6 +49,7 @@
         tools:text="Bamboo"
         android:textColor="#27394A"
         android:textSize="32sp"
+        android:transitionName="name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
@@ -61,6 +62,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/plant_name"
         app:srcCompat="@drawable/plant3"
+        android:transitionName="image"
         android:contentDescription="@string/todo" />
 
     <TextView
@@ -136,6 +138,7 @@
         tools:text="TextView"
         android:textColor="#27394a"
         android:textSize="24sp"
+        android:transitionName="price"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/plant_description" />
 

@@ -17,6 +17,7 @@
         tools:text="Price"
         android:textColor="#27394A"
         android:textSize="24sp"
+        android:transitionName="price"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -30,6 +31,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/plant3"
+        android:transitionName="image"
         android:contentDescription="@string/todo" />
 
     <TextView
@@ -41,6 +43,7 @@
         android:fontFamily="@font/proximanovasemibold"
         tools:text="Name"
         android:textColor="#27394A"
+        android:transitionName="name"
         app:layout_constraintBottom_toTopOf="@+id/plant_price"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

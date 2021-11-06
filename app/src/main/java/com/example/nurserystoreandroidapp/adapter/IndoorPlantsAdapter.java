@@ -1,8 +1,10 @@
 package com.example.nurserystoreandroidapp.adapter;
 
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
+import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.nurserystoreandroidapp.MainActivity;
 import com.example.nurserystoreandroidapp.PlantDetails;
 import com.example.nurserystoreandroidapp.R;
 import com.example.nurserystoreandroidapp.model.Recommended;
@@ -51,6 +54,11 @@ public class IndoorPlantsAdapter extends RecyclerView.Adapter<IndoorPlantsAdapte
 
                 Intent i = new Intent(context, PlantDetails.class);
 
+                Pair[] pairs = new Pair[3];
+                pairs[0] = new Pair<View, String>(holder.plantImage, "image");
+                pairs[1] = new Pair<View, String>(holder.plantName, "name");
+                pairs[2] = new Pair<View, String>(holder.plantPrice, "price");
+
                 i.putExtra("name", recommendedList.get(position).getName());
                 i.putExtra("cat", recommendedList.get(position).getCategory());
                 i.putExtra("size", recommendedList.get(position).getSize());
@@ -64,7 +72,9 @@ public class IndoorPlantsAdapter extends RecyclerView.Adapter<IndoorPlantsAdapte
                 i.putExtra("imgurl", recommendedList.get(position).getImageUrl());
                 i.putExtra("desc", recommendedList.get(position).getDesc());
 
-                context.startActivity(i);
+                ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation((Activity)context ,pairs);
+
+                context.startActivity(i, activityOptions.toBundle());
             }
         });
     }
