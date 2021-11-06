@@ -50,6 +50,20 @@ public class IndoorPlantsAdapter extends RecyclerView.Adapter<IndoorPlantsAdapte
             public void onClick(View view) {
 
                 Intent i = new Intent(context, PlantDetails.class);
+
+                i.putExtra("name", recommendedList.get(position).getName());
+                i.putExtra("cat", recommendedList.get(position).getCategory());
+                i.putExtra("size", recommendedList.get(position).getSize());
+                i.putExtra("price", recommendedList.get(position).getPrice());
+                i.putExtra("type", recommendedList.get(position).getType());
+                i.putExtra("placement", recommendedList.get(position).getPlacement());
+                i.putExtra("pot", recommendedList.get(position).getPot());
+                i.putExtra("layer", recommendedList.get(position).getLayer());
+                i.putExtra("height", recommendedList.get(position).getHeight());
+                i.putExtra("dim", recommendedList.get(position).getDimention());
+                i.putExtra("imgurl", recommendedList.get(position).getImageUrl());
+                i.putExtra("desc", recommendedList.get(position).getDesc());
+
                 context.startActivity(i);
             }
         });
