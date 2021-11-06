@@ -8,4 +8,6 @@
     <string name="textview">TextView</string>
     <string name="size">SIZE</string>
     <string name="small">Small</string>
+    <string name="description">This small green and red succulent grows in the shape of a star giving it its Christmas name. Yellow bumps run across the leaves and border the edges. It turns more red when happily stressed. Christmas Carol’ has red-pink flowers that typically bloom in the fall.</string>
+    <string name="free_delivery">* Free Delivery</string>
 </resources>

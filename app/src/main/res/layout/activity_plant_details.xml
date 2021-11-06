@@ -110,4 +110,58 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/plant_siz"
         app:layout_constraintTop_toBottomOf="@+id/plant_siz" />
+
+    <TextView
+        android:id="@+id/plant_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/proximanovasemibold"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/description"
+        android:textColor="#27394A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plant_size" />
+
+    <TextView
+        android:id="@+id/plant_price2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/proximanovasemibold"
+        tools:text="TextView"
+        android:textColor="#27394a"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plant_description" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/plant_price2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/plant_price2"
+        app:srcCompat="@drawable/ic_add_to_bag"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/proximanovasemibold"
+        android:gravity="center"
+        android:text="@string/free_delivery"
+        android:textColor="#4DAA94"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/plant_price2"
+        app:layout_constraintStart_toEndOf="@+id/plant_price2"
+        app:layout_constraintTop_toTopOf="@+id/plant_price2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
