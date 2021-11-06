@@ -1,6 +1,8 @@
 package com.example.nurserystoreandroidapp.adapter;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.nurserystoreandroidapp.PlantDetails;
 import com.example.nurserystoreandroidapp.R;
 import com.example.nurserystoreandroidapp.model.Recommended;
 
@@ -41,6 +44,15 @@ public class IndoorPlantsAdapter extends RecyclerView.Adapter<IndoorPlantsAdapte
         holder.plantPrice.setText(String.format("$ %s", recommendedList.get(position).getPrice()));
 
         Glide.with(context).load(recommendedList.get(position).getImageUrl()).into(holder.plantImage);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent i = new Intent(context, PlantDetails.class);
+                context.startActivity(i);
+            }
+        });
     }
 
     @Override

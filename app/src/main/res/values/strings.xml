@@ -4,4 +4,8 @@
     <string name="indoor_plants">Indoor Plants</string>
     <string name="view_all">View All</string>
     <string name="pots_and_planters">Pots and Planters</string>
+    <string name="category">CATEGORY</string>
+    <string name="textview">TextView</string>
+    <string name="size">SIZE</string>
+    <string name="small">Small</string>
 </resources>
