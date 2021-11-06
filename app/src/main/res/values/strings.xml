@@ -13,4 +13,10 @@
     <string name="details">Details</string>
     <string name="care">Care</string>
     <string name="delivery">Delivery</string>
+    <string name="type">TYPE</string>
+    <string name="placement">PLACEMENT</string>
+    <string name="pot">POT</string>
+    <string name="layer">LAYER</string>
+    <string name="height">HEIGHT</string>
+    <string name="dimensions">DIMENSIONS</string>
 </resources>
